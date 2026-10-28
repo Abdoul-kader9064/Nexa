@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexa Business International | Sourcing Chine-Afrique</title>
+    
+    <!-- Lien vers le CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Police Google Fonts (Poppins pour le moderne, Playfair pour le luxe) -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Icônes FontAwesome (pour les services) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- BARRE DE NAVIGATION -->
+    <header class="navbar">
+        <div class="logo">
+            <!-- N'oublie pas de mettre ton image dans le dossier images/ -->
+            <img src="logo.png" alt="Nexa Business International Logo" class="logo-img">
+        </div>
+                <!-- ANIMATION TEXTE -->
+        <div class="header-animation">
+            <span id="typewriter"></span><span class="cursor">|</span>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#accueil" data-fr="Accueil" data-en="Home">Accueil</a></li>
+                <li><a href="#services" data-fr="Services" data-en="Services">Services</a></li>
+                <li><a href="#apropos" data-fr="À Propos" data-en="About Us">À Propos</a></li>
+                
+                <!-- Bouton de traduction -->
+                <li class="lang-switch">
+                    <button id="btn-fr" class="active">FR</button> | 
+                    <button id="btn-en">EN</button>
+                </li>
+                
+                <li><a href="#contact" class="btn-contact" data-fr="Devis Gratuit" data-en="Free Quote">Devis Gratuit</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Menu burger pour mobile -->
+        <div class="burger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- SECTION ACCUEIL (HERO) -->
+    <section id="accueil" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h2 data-fr="Votre Partenaire de Confiance entre la Chine et l'Afrique." data-en="Your Trusted Partner between China and Africa.">
+                Votre Partenaire de Confiance entre la Chine et l'Afrique.
+            </h2>
+            <p data-fr="Sourcing, contrôle qualité, et logistique. Nous sécurisons vos achats et gérons toute la chaîne d'importation jusqu'à votre porte." data-en="Sourcing, quality control, and logistics. We secure your purchases and manage the entire import chain to your door.">
+                Sourcing, contrôle qualité, et logistique. Nous sécurisons vos achats et gérons toute la chaîne d'importation jusqu'à votre porte.
+            </p>
+            <a href="#contact" class="btn-primary" data-fr="Démarrer un Projet" data-en="Start a Project">Démarrer un Projet</a>
+        </div>
+    </section>
+
+    <!-- SECTION SERVICES -->
+    <section id="services" class="services">
+        <h2 class="section-title" data-fr="Nos Services" data-en="Our Services">Nos Services</h2>
+        <div class="services-grid">
+            
+            <div class="card">
+                <i class="fas fa-search-dollar card-icon"></i>
+                <h3 data-fr="Sourcing & Achat" data-en="Sourcing & Purchasing">Sourcing & Achat</h3>
+                <p data-fr="Nous trouvons les meilleurs fournisseurs en Chine, négocions les prix et vérifions la légitimité des usines pour vous." data-en="We find the best suppliers in China, negotiate prices, and verify factory legitimacy for you.">
+                    Nous trouvons les meilleurs fournisseurs en Chine, négocions les prix et vérifions la légitimité des usines pour vous.
+                </p>
+            </div>
+
+            <div class="card">
+                <i class="fas fa-shield-alt card-icon"></i>
+                <h3 data-fr="Contrôle Qualité" data-en="Quality Control">Contrôle Qualité</h3>
+                <p data-fr="Inspection de vos marchandises avant expédition. Nous vous envoyons des photos et vidéos pour valider la conformité." data-en="Inspection of your goods before shipping. We send you photos and videos to validate compliance.">
+                    Inspection de vos marchandises avant expédition. Nous vous envoyons des photos et vidéos pour valider la conformité.
+                </p>
+            </div>
+
+            <div class="card">
+                <i class="fas fa-ship card-icon"></i>
+                <h3 data-fr="Logistique & Livraison" data-en="Logistics & Delivery">Logistique & Livraison</h3>
+                <p data-fr="Transport aérien et maritime. Nous gérons les douanes et livrons directement dans votre pays." data-en="Air and sea transport. We handle customs and deliver directly to your country.">
+                    Transport aérien et maritime. Nous gérons les douanes et livrons directement dans votre pays.
+                </p>
+            </div>
+
+        </div>
+    </section>
+        <!-- SECTION FORMULAIRE DE DEVIS -->
+    <section id="devis" class="quote-section">
+        <div class="quote-container">
+            <div class="quote-text">
+                <h2 data-fr="Demandez votre devis gratuit" data-en="Request your free quote">Demandez votre devis gratuit</h2>
+                <p data-fr="Remplissez ce formulaire. Nos experts analyseront votre demande et vous répondront sous 24h." data-en="Fill out this form. Our experts will analyze your request and respond within 24 hours.">
+                    Remplissez ce formulaire. Nos experts analyseront votre demande et vous répondront sous 24h.
+                </p>
+                <ul class="quote-benefits">
+                    <li><i class="fas fa-check-circle"></i> <span data-fr="Analyse gratuite de votre produit" data-en="Free analysis of your product">Analyse gratuite de votre produit</span></li>
+                    <li><i class="fas fa-check-circle"></i> <span data-fr="Recherche de fournisseurs vérifiés" data-en="Search for verified suppliers">Recherche de fournisseurs vérifiés</span></li>
+                    <li><i class="fas fa-check-circle"></i> <span data-fr="Estimation des frais de transport" data-en="Shipping cost estimation">Estimation des frais de transport</span></li>
+                </ul>
+            </div>
+
+            <div class="quote-form-wrapper">
+                <form id="nexa-quote-form">
+                    <div class="form-group">
+                        <label for="name" data-fr="Votre Nom / Entreprise" data-en="Your Name / Company">Votre Nom / Entreprise</label>
+                        <input type="text" id="name" required placeholder="Ex: abdoul kader">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="product" data-fr="Type de produit" data-en="Product type">Type de produit</label>
+                        <select id="product" required>
+                            <option value="" disabled selected data-fr="Sélectionnez une catégorie" data-en="Select a category">Sélectionnez une catégorie</option>
+                            <option value="Électronique" data-fr="Électronique" data-en="Electronics">Électronique</option>
+                            <option value="Textile" data-fr="Textile / Vêtements" data-en="Textile / Clothing">Textile / Vêtements</option>
+                            <option value="Machines" data-fr="Machines Industrielles" data-en="Industrial Machinery">Machines Industrielles</option>
+                            <option value="Maison" data-fr="Décoration / Maison" data-en="Home / Decoration">Décoration / Maison</option>
+                            <option value="Autre" data-fr="Autre" data-en="Other">Autre</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="quantity" data-fr="Quantité estimée" data-en="Estimated quantity">Quantité estimée</label>
+                        <input type="text" id="quantity" required placeholder="Ex: 500 pièces">
+                    </div>
+                                        <div class="form-group">
+                        <label for="country" data-fr="Pays de livraison" data-en="Delivery country">Pays de livraison</label>
+                        <select id="country" required>
+                            <option value="" disabled selected data-fr="Sélectionnez votre pays" data-en="Select your country">Sélectionnez votre pays</option>
+                            <option value="Bénin" data-fr="Bénin" data-en="Benin">Bénin</option>
+                            <option value="Burkina Faso" data-fr="Burkina Faso" data-en="Burkina Faso">Burkina Faso</option>
+                            <option value="Cameroun" data-fr="Cameroun" data-en="Cameroon">Cameroun</option>
+                            <option value="Côte d'Ivoire" data-fr="Côte d'Ivoire" data-en="Ivory Coast">Côte d'Ivoire</option>
+                            <option value="Gabon" data-fr="Gabon" data-en="Gabon">Gabon</option>
+                            <option value="Mali" data-fr="Mali" data-en="Mali">Mali</option>
+                            <option value="Niger" data-fr="Niger" data-en="Niger">Niger</option>
+                            <option value="Nigeria" data-fr="Nigeria" data-en="Nigeria">Nigeria</option>
+                            <option value="RDC" data-fr="République Démocratique du Congo" data-en="DR Congo">République Démocratique du Congo</option>
+                            <option value="Sénégal" data-fr="Sénégal" data-en="Senegal">Sénégal</option>
+                            <option value="Tchad" data-fr="Tchad" data-en="Chad">Tchad</option>
+                            <option value="Togo" data-fr="Togo" data-en="Togo">Togo</option>
+                            <option value="Autre" data-fr="Autre pays" data-en="Other country">Autre pays</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="link" data-fr="Lien du produit (Optionnel)" data-en="Product link (Optional)">Lien du produit (Optionnel)</label>
+                        <input type="url" id="link" placeholder="Ex: https://www.alibaba.com/...">
+                    </div>
+
+                    <button type="submit" class="btn-submit-form">
+                        <i class="fab fa-whatsapp"></i> 
+                        <span data-fr="Générer mon devis WhatsApp" data-en="Generate my WhatsApp quote">Générer mon devis WhatsApp</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- SECTION CONTACT RAPIDE -->
+    <section id="contact" class="contact-section">
+        <h2 data-fr="Prêt à importer ?" data-en="Ready to import?">Prêt à importer ?</h2>
+        <p data-fr="Contactez-nous directement via WhatsApp pour une réponse rapide et un devis personnalisé." data-en="Contact us directly via WhatsApp for a quick response and a customized quote.">
+            Contactez-nous directement via WhatsApp pour une réponse rapide et un devis personnalisé.
+        </p>
+        <!-- Remplace VOTRE_NUMERO par ton numéro avec l'indicatif (ex: 22890123456) -->
+        <a href="https://wa.me/22790641271" class="btn-whatsapp" target="_blank">
+            <i class="fab fa-whatsapp"></i> 
+            <span data-fr="Discuter sur WhatsApp" data-en="Chat on WhatsApp">Discuter sur WhatsApp</span>
+        </a>
+    </section>
+
+    <!-- PIED DE PAGE -->
+    <footer>
+        <p>&copy; 2026 Nexa Business International. <span data-fr="Tous droits réservés." data-en="All rights reserved.">Tous droits réservés.</span></p>
+    </footer>
+
+    <!-- Lien vers le JS -->
+    <script src="script.js"></script>
+</body>
+</html>
